@@ -4,10 +4,24 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
+    "format": "prettier --write src",
+    "lint": "eslint \"src/**/*.{tsx,jsx}\" --fix && npm run format",
     "type-check": "tsc"
   },
   "dependencies": {
-    "next": "latest",
+    "@polkadot-onboard/core": "^0.0.10",
+    "@polkadot-onboard/injected-wallets": "^0.0.10",
+    "@polkadot-onboard/react": "^0.0.10",
+    "@polkadot-onboard/wallet-connect": "^0.0.10",
+    "next": "13.4.1",
+    "postcss": "8.4.23",
+    "eslint-config-next": "13.4.1",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-simple-import-sort": "^10.0.0",
+    "@next/eslint-plugin-next": "^13.4.1",
+    "@tanstack/react-query": "^4.29.5",
+    "@tanstack/react-query-devtools": "^4.29.6",
+    "@typescript-eslint/eslint-plugin": "^5.59.5",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
@@ -15,6 +29,13 @@
     "@types/node": "^12.12.21",
     "@types/react": "^17.0.2",
     "@types/react-dom": "^17.0.1",
+    "postcss-preset-env": "^8.4.2",
+    "eslint": "^8.40.0",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "husky": "^8.0.3",
+    "prettier": "^2.8.8",
+    "tailwindcss": "^3.3.2",
     "typescript": "^4.8.3"
   }
 }
